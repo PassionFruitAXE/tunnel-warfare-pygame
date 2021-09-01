@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.1" orientation="orthogonal" renderorder="right-down" width="195" height="100" tilewidth="16" tileheight="16" infinite="0" backgroundcolor="#000000" nextlayerid="53" nextobjectid="361">
+ <tileset firstgid="1" name="dungeon tileset" tilewidth="16" tileheight="16" tilecount="960" columns="30">
+  <image source="../images/tmx/dungeon.png" width="480" height="512"/>
+ </tileset>
+ <tileset firstgid="961" name="goblin_cave" tilewidth="16" tileheight="16" tilecount="832" columns="16">
+  <image source="../images/tmx/goblin_cave.png" width="256" height="837"/>
+ </tileset>
+ <tileset firstgid="1793" name="dungeon_tiles" tilewidth="16" tileheight="16" tilecount="552" columns="23">
+  <image source="../images/tmx/dungeon_tiles.png" width="368" height="384"/>
+ </tileset>
+ <tileset firstgid="2345" name="handpainted_plat" tilewidth="16" tileheight="16" tilecount="12544" columns="112">
+  <image source="../images/tmx/handpainted_plat.png" width="1792" height="1792"/>
+ </tileset>
+ <tileset firstgid="14889" name="house" tilewidth="16" tileheight="16" tilecount="1508" columns="58">
+  <image source="../images/tmx/house.png" width="932" height="424"/>
+ </tileset>
+ <tileset firstgid="16397" name="castle" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="../images/tmx/castle.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="17421" name="magecity" tilewidth="16" tileheight="16" tilecount="1440" columns="16">
+  <image source="../images/tmx/magecity.png" width="256" height="1450"/>
+ </tileset>
+ <tileset firstgid="18861" source="C:/Users/shallowwind/Desktop/resources/tmx/地形贴图100张-terrain-R02O0104_爱给网_aigei_com.tsx"/>
+ <imagelayer id="52" name="图像图层 1">
+  <image source="tunnel_map.png" width="3120" height="1600"/>
+ </imagelayer>
+ <objectgroup id="29" name="日本人" visible="0">
+  <object id="188" x="118.364" y="751.333">
+   <polygon points="0,0 19,23 1,43"/>
+  </object>
+  <object id="189" x="116.697" y="1222.91">
+   <polygon points="0,0 20,38 6,45"/>
+  </object>
+  <object id="190" x="899.515" y="505.818">
+   <polygon points="0,0 -9,36 12,44"/>
+  </object>
+  <object id="191" x="630.455" y="964">
+   <polygon points="0,0 6,36 -19,50"/>
+  </object>
+  <object id="192" x="2132.15" y="429.455">
+   <polygon points="0,0 12,33 0,44"/>
+  </object>
+  <object id="193" x="1673.12" y="511.485">
+   <polygon points="0,0 -13,39 7,45"/>
+  </object>
+  <object id="291" x="1755.27" y="344.606">
+   <polygon points="0,0 12,33 0,44"/>
+  </object>
+  <object id="292" x="2422.27" y="979.606">
+   <polygon points="0,0 12,33 0,44"/>
+  </object>
+  <object id="293" x="2678.3" y="734.606">
+   <polygon points="0,0 12,33 0,44"/>
+  </object>
+  <object id="294" x="2668.33" y="358.03">
+   <polygon points="0,0 12,33 0,44"/>
+  </object>
+  <object id="295" x="1635.73" y="957.273">
+   <polygon points="0,0 12,33 0,44"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="39" name="奖品">
+  <object id="197" x="368" y="738" width="36" height="50">
+   <ellipse/>
+  </object>
+  <object id="198" x="364.727" y="1481.18" width="36" height="50">
+   <ellipse/>
+  </object>
+  <object id="199" x="1128.85" y="1238.27" width="36" height="50">
+   <ellipse/>
+  </object>
+  <object id="200" x="1643.76" y="729.061" width="36" height="50">
+   <ellipse/>
+  </object>
+  <object id="201" x="2667.15" y="1241.18" width="36" height="50">
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup id="40" name="解放军" visible="0">
+  <object id="204" x="2928.3" y="1467.58" width="30" height="45">
+   <ellipse/>
+  </object>
+  <object id="205" x="1392.33" y="1477.48" width="29" height="53">
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup id="50" name="障碍物" visible="0">
+  <object id="298" x="0" y="6.06061" width="3112.12" height="303.03"/>
+  <object id="299" x="-3.0303" y="621.212" width="863.636" height="106.061"/>
+  <object id="300" x="924.242" y="612.121" width="687.879" height="115.152"/>
+  <object id="301" x="1700" y="618.182" width="948.485" height="106.061"/>
+  <object id="302" x="2718.18" y="621.212" width="400" height="103.03"/>
+  <object id="304" x="3.0303" y="778.788" width="81.8182" height="187.879"/>
+  <object id="311" x="4.54545" y="1278.79" width="81.8182" height="187.879"/>
+  <object id="312" x="4.54545" y="1024.24" width="81.8182" height="187.879"/>
+  <object id="314" x="169.697" y="793.939" width="172.727" height="178.788"/>
+  <object id="315" x="419.697" y="1046.97" width="172.727" height="178.788"/>
+  <object id="316" x="422.727" y="795.454" width="172.727" height="178.788"/>
+  <object id="317" x="168.182" y="1295.45" width="172.727" height="178.788"/>
+  <object id="318" x="171.212" y="1040.91" width="172.727" height="178.788"/>
+  <object id="319" x="416.667" y="1304.55" width="172.727" height="178.788"/>
+  <object id="320" x="674.243" y="774.242" width="172.727" height="178.788"/>
+  <object id="321" x="677.273" y="1046.97" width="172.727" height="178.788"/>
+  <object id="322" x="680.303" y="1301.52" width="172.727" height="178.788"/>
+  <object id="323" x="940.909" y="1301.52" width="172.727" height="178.788"/>
+  <object id="324" x="940.909" y="1040.91" width="172.727" height="178.788"/>
+  <object id="325" x="943.94" y="783.333" width="172.727" height="178.788"/>
+  <object id="326" x="1189.39" y="789.394" width="172.727" height="178.788"/>
+  <object id="327" x="1192.42" y="1050" width="172.727" height="178.788"/>
+  <object id="328" x="1192.42" y="1307.58" width="172.727" height="178.788"/>
+  <object id="329" x="1450" y="1307.58" width="172.727" height="178.788"/>
+  <object id="330" x="1443.94" y="1046.97" width="172.727" height="178.788"/>
+  <object id="331" x="1450" y="795.454" width="172.727" height="178.788"/>
+  <object id="332" x="1707.58" y="795.454" width="172.727" height="178.788"/>
+  <object id="333" x="1701.52" y="1053.03" width="172.727" height="178.788"/>
+  <object id="334" x="1707.58" y="1310.61" width="172.727" height="178.788"/>
+  <object id="335" x="1959.09" y="1307.58" width="172.727" height="178.788"/>
+  <object id="336" x="1962.12" y="1053.03" width="172.727" height="178.788"/>
+  <object id="337" x="1962.12" y="792.424" width="172.727" height="178.788"/>
+  <object id="338" x="2216.67" y="792.424" width="172.727" height="178.788"/>
+  <object id="339" x="2210.61" y="1053.03" width="172.727" height="178.788"/>
+  <object id="340" x="2210.61" y="1310.61" width="172.727" height="178.788"/>
+  <object id="341" x="2474.24" y="789.394" width="172.727" height="178.788"/>
+  <object id="342" x="2480.3" y="1050" width="172.727" height="178.788"/>
+  <object id="343" x="2480.3" y="1307.58" width="172.727" height="178.788"/>
+  <object id="344" x="2734.85" y="789.394" width="172.727" height="178.788"/>
+  <object id="345" x="2734.85" y="1046.97" width="172.727" height="178.788"/>
+  <object id="346" x="2734.85" y="1304.55" width="172.727" height="178.788"/>
+  <object id="347" x="2986.36" y="787.879" width="124.242" height="187.879"/>
+  <object id="350" x="2989.39" y="1051.52" width="124.242" height="187.879"/>
+  <object id="351" x="2989.39" y="1306.06" width="124.242" height="187.879"/>
+  <object id="352" x="3106.06" y="3.0303" width="39.3939" height="1651.52"/>
+  <object id="353" x="6.06061" y="1530.3" width="3139.39" height="121.212"/>
+  <object id="355" x="-45.4545" y="6.06061" width="51.5152" height="1642.42"/>
+  <object id="356" x="6.06061" y="445.455" width="72.7273" height="172.727"/>
+  <object id="357" x="69.697" y="512.121" width="227.273" height="106.061"/>
+  <object id="358" x="300" y="542.424" width="54.5455" height="78.7879"/>
+  <object id="359" x="360.606" y="572.727" width="30.303" height="48.4848"/>
+  <object id="360" x="400" y="590.909" width="24.2424" height="30.303"/>
+ </objectgroup>
+ <objectgroup id="48" name="小铁">
+  <object id="296" x="3070" y="1480" width="9" height="9"/>
+ </objectgroup>
+</map>
