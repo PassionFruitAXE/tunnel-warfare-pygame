@@ -35,7 +35,7 @@ class TunnelTask2BeginDialog(SysBaseDialog):
         text_list = []
         text_list.append("红军：小铁，;" +
                          "组织需要你上到地面去埋地雷了喔。;" +
-                         "需要炸死2个日本鬼子喔。")
+                         "请把所有的敌人消灭")
 
         text_list.append("小铁：我已经迫不及待了，;" +
                          "保障完成组织交代的任务。")

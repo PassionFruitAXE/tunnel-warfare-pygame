@@ -41,16 +41,16 @@ class XiaoTie(pygame.sprite.Sprite):
 
         if key_list[pygame.K_DOWN]:
             self.dir = WalkDir.down
-            off_y += 5
+            off_y += 15
         elif key_list[pygame.K_UP]:
             self.dir = WalkDir.up
-            off_y -= 5
+            off_y -= 15
         elif key_list[pygame.K_LEFT]:
             self.dir = WalkDir.left
-            off_x -= 5
+            off_x -= 15
         elif key_list[pygame.K_RIGHT]:
             self.dir = WalkDir.right
-            off_x += 5
+            off_x += 15
         self.boy_base_action.set_dir(self.dir)
         self.army_base_action.set_dir(self.dir)
 

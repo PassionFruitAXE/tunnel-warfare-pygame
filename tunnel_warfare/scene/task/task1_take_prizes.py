@@ -1,4 +1,3 @@
-
 import pygame
 
 from dialog.tunnel_dialog import TunnelTask1BeginDialog, TunnelTask1EndDialog, TunnelTaskFailDialog
@@ -26,11 +25,11 @@ class TakePrizesTask(BaseTask):
         temp_rect = self.xiao_tie.rect
         self.xiao_tie.rect = pygame.Rect(self.xiao_tie.pos_x + 5,
                                          self.xiao_tie.pos_y + 6, 20, 60)
-        collide_list = pygame.sprite.spritecollide(self.xiao_tie, self.prizes_group,True)
+        collide_list = pygame.sprite.spritecollide(self.xiao_tie, self.prizes_group, True)
         self.xiao_tie.rect = temp_rect
 
         if len(collide_list) > 0:
             self.score += 1
             self.sound.play()
-        if self.score > 3:
+        if self.score > 4:
             self.task_status = TaskStatus.win_dialog

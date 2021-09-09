@@ -25,42 +25,42 @@
  <imagelayer id="52" name="图像图层 1">
   <image source="tunnel_map.png" width="3120" height="1600"/>
  </imagelayer>
- <objectgroup id="29" name="日本人" visible="0">
-  <object id="188" x="118.364" y="751.333">
+ <objectgroup id="29" name="日本人">
+  <object id="188" x="123.697" y="775.333">
    <polygon points="0,0 19,23 1,43"/>
   </object>
-  <object id="189" x="116.697" y="1222.91">
+  <object id="189" x="118.03" y="1252.24">
    <polygon points="0,0 20,38 6,45"/>
   </object>
   <object id="190" x="899.515" y="505.818">
    <polygon points="0,0 -9,36 12,44"/>
   </object>
-  <object id="191" x="630.455" y="964">
+  <object id="191" x="620.455" y="968.667">
    <polygon points="0,0 6,36 -19,50"/>
   </object>
-  <object id="192" x="2132.15" y="429.455">
+  <object id="192" x="890.817" y="1254.79">
    <polygon points="0,0 12,33 0,44"/>
   </object>
-  <object id="193" x="1673.12" y="511.485">
+  <object id="193" x="1132.45" y="735.485">
    <polygon points="0,0 -13,39 7,45"/>
   </object>
   <object id="291" x="1755.27" y="344.606">
    <polygon points="0,0 12,33 0,44"/>
   </object>
-  <object id="292" x="2422.27" y="979.606">
+  <object id="292" x="2426.27" y="995.606">
    <polygon points="0,0 12,33 0,44"/>
   </object>
-  <object id="293" x="2678.3" y="734.606">
+  <object id="293" x="2683.63" y="735.939">
    <polygon points="0,0 12,33 0,44"/>
   </object>
   <object id="294" x="2668.33" y="358.03">
    <polygon points="0,0 12,33 0,44"/>
   </object>
-  <object id="295" x="1635.73" y="957.273">
+  <object id="295" x="1655.73" y="979.94">
    <polygon points="0,0 12,33 0,44"/>
   </object>
  </objectgroup>
- <objectgroup id="39" name="奖品">
+ <objectgroup id="39" name="奖品" visible="0">
   <object id="197" x="368" y="738" width="36" height="50">
    <ellipse/>
   </object>
@@ -78,10 +78,10 @@
   </object>
  </objectgroup>
  <objectgroup id="40" name="解放军" visible="0">
-  <object id="204" x="2928.3" y="1467.58" width="30" height="45">
+  <object id="204" x="2929.63" y="1455.58" width="30" height="45">
    <ellipse/>
   </object>
-  <object id="205" x="1392.33" y="1477.48" width="29" height="53">
+  <object id="205" x="1393.66" y="1438.81" width="29" height="53">
    <ellipse/>
   </object>
  </objectgroup>
@@ -139,7 +139,7 @@
   <object id="359" x="360.606" y="572.727" width="30.303" height="48.4848"/>
   <object id="360" x="400" y="590.909" width="24.2424" height="30.303"/>
  </objectgroup>
- <objectgroup id="48" name="小铁">
+ <objectgroup id="48" name="小铁" visible="0">
   <object id="296" x="3070" y="1480" width="9" height="9"/>
  </objectgroup>
 </map>
