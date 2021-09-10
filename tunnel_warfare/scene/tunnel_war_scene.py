@@ -60,7 +60,7 @@ class TunnelWarScene(BaseScene):
         self.tasks = []
         self.tasks.append(TakePrizesTask(self.xiao_tie, self.prizes_group, self.font))
         self.tasks.append(KillJapaneseTask(self.xiao_tie, self.japanese_group, self.font))
-        # self.tasks.append(TransmitMessageTask(self.xiao_tie, self.jian_jun, self.tie_tou, self.font))
+        self.tasks.append(TransmitMessageTask(self.xiao_tie, self.jian_jun, self.tie_tou, self.font))
         self.task_id = 0
 
     def draw_actor(self):

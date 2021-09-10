@@ -25,7 +25,7 @@
  <imagelayer id="52" name="图像图层 1">
   <image source="tunnel_map.png" width="3120" height="1600"/>
  </imagelayer>
- <objectgroup id="29" name="日本人">
+ <objectgroup id="29" name="日本人" visible="0">
   <object id="188" x="615.697" y="739.333">
    <polygon points="0,0 19,23 1,43"/>
   </object>
@@ -60,7 +60,7 @@
    <polygon points="0,0 12,33 0,44"/>
   </object>
  </objectgroup>
- <objectgroup id="39" name="奖品">
+ <objectgroup id="39" name="奖品" visible="0">
   <object id="197" x="360" y="968" width="36" height="50">
    <ellipse/>
   </object>
@@ -77,11 +77,11 @@
    <ellipse/>
   </object>
  </objectgroup>
- <objectgroup id="40" name="解放军" visible="0">
-  <object id="204" x="369.63" y="1235.58" width="30" height="45">
+ <objectgroup id="40" name="解放军">
+  <object id="204" name="铁头" x="369.63" y="1235.58" width="30" height="45">
    <ellipse/>
   </object>
-  <object id="205" x="113.66" y="966.81" width="29" height="53">
+  <object id="205" name="建军" x="2925.66" y="734.81" width="29" height="53">
    <ellipse/>
   </object>
  </objectgroup>
