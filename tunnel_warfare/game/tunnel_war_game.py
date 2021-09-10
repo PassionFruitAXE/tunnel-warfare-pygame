@@ -47,6 +47,6 @@ class TunnelWarGame:
                     break
 
             # 通过时钟对象指定循环频
-            self.clock.tick(20)
+            self.clock.tick(40)
             # 调用flip方法更新显示,也可以使用update方法
             pygame.display.flip()

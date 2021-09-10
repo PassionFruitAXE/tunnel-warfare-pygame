@@ -10,9 +10,9 @@ class TunnelTask1BeginDialog(SysBaseDialog):
                          "我已经时刻准备接收挑战了")
 
         text_list.append("红军：小铁，你准备好了吗？;" +
-                         "我们需要你帮忙找到;" +
-                         "一些制作地雷的原材料。;" +
-                         "我们需要5种原材料喔。")
+                         "请找到5种地雷原材料;" +
+                         "我们有一个隐蔽的据点。;" +
+                         "别被日本人抓到了。;")
 
         text_list.append("小铁：时刻准备着，;" +
                          "保障完成组织交代的任务。")
@@ -35,7 +35,7 @@ class TunnelTask2BeginDialog(SysBaseDialog):
         text_list = []
         text_list.append("红军：小铁，;" +
                          "组织需要你上到地面去埋地雷了喔。;" +
-                         "请把所有的敌人消灭")
+                         "请把消灭5个敌人")
 
         text_list.append("小铁：我已经迫不及待了，;" +
                          "保障完成组织交代的任务。")

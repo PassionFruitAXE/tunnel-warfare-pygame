@@ -37,7 +37,7 @@ class KillJapaneseTask(BaseTask):
                                item.rect.y - item.rect.height)
             self.score += 1
 
-        if self.score > 10:
+        if self.score > 4:
             self.task_status = TaskStatus.win_dialog
             self.xiao_tie.set_status("army")
 
