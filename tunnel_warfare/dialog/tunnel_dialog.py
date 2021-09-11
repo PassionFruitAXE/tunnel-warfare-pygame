@@ -4,17 +4,19 @@ from dialog import SysBaseDialog
 class TunnelTask1BeginDialog(SysBaseDialog):
     def __init__(self, font):
         text_list = []
-        text_list.append("小铁：大家好，我是小铁，;" +
-                         "我是红军小战士，;" +
-                         "我会在在磨练中成长的;" +
-                         "我已经时刻准备接收挑战了")
+        text_list.append("我叫小铁是一名红军小战士，;" +
+                         "日本人来我们村子里扫荡了，;" +
+                         "战士们都在地道之中走不开, ;" +
+                         "我一定要帮战士们完成任务")
 
-        text_list.append("红军：小铁，你准备好了吗？;" +
-                         "请找到5种地雷原材料;" +
-                         "我们有一个隐蔽的据点。;" +
-                         "别被日本人抓到了。;")
+        text_list.append("红军：;" +
+                         "小铁，我们没有地雷了;" +
+                         "请帮我们找到5种地雷原材料;" +
+                         "我们还有一个隐蔽的据点。;" +
+                         "小心别被日本人抓到了。;")
 
-        text_list.append("小铁：时刻准备着，;" +
+        text_list.append("小铁：;" +
+                         "我一定不负使命，;" +
                          "保障完成组织交代的任务。")
         super(TunnelTask1BeginDialog, self).__init__(text_list, font)
 
@@ -22,10 +24,11 @@ class TunnelTask1BeginDialog(SysBaseDialog):
 class TunnelTask1EndDialog(SysBaseDialog):
     def __init__(self, font):
         text_list = []
-        text_list.append("红军：恭喜你，小铁同志，;" +
-                         "你已经通过了第一关考核，;" +
-                         "你已经收集好材料，;" +
-                         "可以制作地雷。 ")
+        text_list.append("红军：;"+
+                         "谢谢你，小铁同志，;" +
+                         "我们离革命成功又近了一步，;" +
+                         "你已经收集好材料了吧，;" +
+                         "接下来就可以制作地雷了。 ")
 
         super(TunnelTask1EndDialog, self).__init__(text_list, font)
 
@@ -33,11 +36,12 @@ class TunnelTask1EndDialog(SysBaseDialog):
 class TunnelTask2BeginDialog(SysBaseDialog):
     def __init__(self, font):
         text_list = []
-        text_list.append("红军：小铁，;" +
+        text_list.append("红军：;"+
+                         "小铁，;" +
                          "组织需要你上到地面去埋地雷了喔。;" +
-                         "请把消灭5个敌人")
+                         "请消灭5个敌人")
 
-        text_list.append("小铁：我已经迫不及待了，;" +
+        text_list.append("小铁：;" +
                          "保障完成组织交代的任务。")
         super(TunnelTask2BeginDialog, self).__init__(text_list, font)
 
@@ -46,7 +50,7 @@ class TunnelTask2EndDialog(SysBaseDialog):
     def __init__(self, font):
         text_list = []
         text_list.append("红军：恭喜你，小铁，;" +
-                         "你非常勇敢，;" +
+                         "你做的很好，;" +
                          "并且你已经通过了第二关考核。 ")
         super(TunnelTask2EndDialog, self).__init__(text_list, font)
 
@@ -54,15 +58,18 @@ class TunnelTask2EndDialog(SysBaseDialog):
 class TunnelTask3BeginDialog(SysBaseDialog):
     def __init__(self, font):
         text_list = []
-        text_list.append("红军：小铁，你已经是个合格的小战士，;" +
-                         "你需要找到一名叫建军的同志，;" +
-                         "得到日军消息，并带给一个叫铁头的同志。")
+        text_list.append("红军：;" +
+                         "小铁，你已经是个红军战士了，;" +
+                         "你需要找到建军同志，;" +
+                         "他潜伏在日军时得到的重要情报，;" +
+                         "把情报带给铁头同志。")
 
-        text_list.append("红军：接头暗号是，;" +
-                         "他说：天王盖地虎，;" +
-                         "你答：小鸡炖蘑菇。;")
+        text_list.append("红军：;"
+                         "接头暗号是;" +
+                         "他说：奇变偶不变，;" +
+                         "你答：符号看象限。;")
 
-        text_list.append("小铁：保证完成任务")
+        text_list.append("小铁：一定将消息带到！")
         super(TunnelTask3BeginDialog, self).__init__(text_list, font)
 
 
@@ -79,6 +86,6 @@ class TunnelTaskFailDialog(SysBaseDialog):
     def __init__(self, font):
         text_list = []
         text_list.append("红军：小铁同志，闯关失败;" +
-                         "继续努力!" )
+                         "继续努力!")
 
         super(TunnelTaskFailDialog, self).__init__(text_list, font)
