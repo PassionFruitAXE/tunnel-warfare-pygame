@@ -76,11 +76,12 @@ class TunnelWarScene(BaseScene):
         for japanese in self.japanese_group:
             japanese.run(down_flag, key_list, self.obstacle_group, self.xiao_tie_group, self.xiao_tie)
 
-        self.tasks[self.task_id].do_task(down_flag, key_list)
-        take_status = self.tasks[self.task_id].get_status()
-
-        # if key_list[pygame.K_1]:
-        #     print(self.xiao_tie.pos_x, self.xiao_tie.pos_y, self.xiao_tie.rect)
+        # 碰到日本人
+        for japanese in self.japanese_group:
+            is_collide = pygame.sprite.collide_rect(self.xiao_tie, japanese)
+            if is_collide:
+                self.pass_status = ScenePassStatus.final_fail
+                pygame.mixer.music.stop()
 
         # 传送检测
         if abs(self.xiao_tie.pos_x - 3070) <= 5 and abs(self.xiao_tie.pos_y - 950) <= 30:
@@ -93,13 +94,11 @@ class TunnelWarScene(BaseScene):
             self.xiao_tie.pos_y = 950
             self.xiao_tie.rect = pygame.Rect(self.xiao_tie.pos_x + 15, self.xiao_tie.pos_y + 60, 20, 10)
 
-        # 碰到日本人就被抓了
-        for japanese in self.japanese_group:
-            is_collide = pygame.sprite.collide_rect(self.xiao_tie, japanese)
-            if is_collide:
-                self.pass_status = ScenePassStatus.final_fail
-                pygame.mixer.music.stop()
+        self.tasks[self.task_id].do_task(down_flag, key_list)
+        take_status = self.tasks[self.task_id].get_status()
 
+        # if key_list[pygame.K_1]:
+        #     print(self.xiao_tie.pos_x, self.xiao_tie.pos_y, self.xiao_tie.rect)
 
         if take_status == TaskStatus.win_over:
             self.task_id += 1

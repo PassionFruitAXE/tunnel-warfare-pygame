@@ -9,7 +9,7 @@ class ShootSoldier(WalkSoldier):
     shoot_image_height = 100
 
     def __init__(self, work_image_path: str, shoot_image_path: str,
-                 x:int, y:int, name:str, hp:int):
+                 x: int, y: int, name: str, hp: int):
         super(ShootSoldier, self).__init__(work_image_path, x, y, name, hp)
         self.shoot_action = DirShootByAImage(shoot_image_path,
                                              self.shoot_image_width, self.shoot_image_height, True)
@@ -17,8 +17,8 @@ class ShootSoldier(WalkSoldier):
         self.shoot_action.set_dir(ShootDir.not_shoot)
 
     # 0 下 1 左  2 右 3 上
-    def run(self, down_flag,key_list):
-        super(ShootSoldier, self).run(down_flag,key_list)
+    def run(self, down_flag, key_list):
+        super(ShootSoldier, self).run(down_flag, key_list)
         if down_flag:
             if key_list[pygame.K_q]:
                 self.shoot_action.set_dir(ShootDir.left_up)
@@ -35,19 +35,19 @@ class ShootSoldier(WalkSoldier):
                 self.walk_action.set_dir(WalkDir.down)
                 self.shoot_action.set_dir(ShootDir.down)
 
-    def draw(self, surface,x:int,y:int):
+    def draw(self, surface, x: int, y: int):
         if self.shoot_action.shoot_dir == ShootDir.not_shoot:
-            super(ShootSoldier, self).draw(surface,x,y)
+            super(ShootSoldier, self).draw(surface, x, y)
         elif self.shoot_action.shoot_dir == ShootDir.down:
             image = self.shoot_action.get_image()
-            surface.blit(image, (self.pos_x-x, self.pos_y-y))
+            surface.blit(image, (self.pos_x - x, self.pos_y - y))
             image = self.walk_action.get_image()
-            surface.blit(image, (self.pos_x-x, self.pos_y-y))
+            surface.blit(image, (self.pos_x - x, self.pos_y - y))
         elif self.shoot_action.shoot_dir == ShootDir.up:
             image = self.shoot_action.get_image()
-            surface.blit(image, (self.pos_x-x, self.pos_y-y-60))
+            surface.blit(image, (self.pos_x - x, self.pos_y - y - 60))
             image = self.walk_action.get_image()
-            surface.blit(image, (self.pos_x-x, self.pos_y-y))
+            surface.blit(image, (self.pos_x - x, self.pos_y - y))
         else:
             image = self.shoot_action.get_image()
-            surface.blit(image, (self.pos_x-x, self.pos_y-y))
+            surface.blit(image, (self.pos_x - x, self.pos_y - y))

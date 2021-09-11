@@ -20,16 +20,16 @@ class JapaneseShootSoldier(ShootSoldier):
             self.count = 5
             if key == 0:
                 self.walk_action.set_dir(WalkDir.left)
-                self.shoot_action.set_dir(ShootDir.left_down)
+                # self.shoot_action.set_dir(ShootDir.left_down)
             elif key == 1:
                 self.walk_action.set_dir(WalkDir.right)
-                self.shoot_action.set_dir(ShootDir.right_down)
+                # self.shoot_action.set_dir(ShootDir.right_down)
             elif key == 2:
                 self.walk_action.set_dir(WalkDir.up)
-                self.shoot_action.set_dir(ShootDir.up)
+                # self.shoot_action.set_dir(ShootDir.up)
             elif key == 3:
                 self.walk_action.set_dir(WalkDir.down)
-                self.shoot_action.set_dir(ShootDir.down)
+                # self.shoot_action.set_dir(ShootDir.down)
         else:
             self.count = 0
         off_x = 0
