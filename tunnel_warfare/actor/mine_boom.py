@@ -11,7 +11,7 @@ class Mine(pygame.sprite.Sprite):
         self.rect = pygame.Rect(self.pos_x, self.pos_y, w, h)
 
     def draw(self, surface, view_x, view_y):
-        surface.blit(self.image, (self.pos_x - view_x, self.pos_y - view_y))
+        surface.blit(self.image, (self.pos_x - view_x + 15, self.pos_y - view_y + 45))
 
 
 class Boom(pygame.sprite.Sprite):
@@ -48,7 +48,7 @@ class Boom(pygame.sprite.Sprite):
             if self.no >= self.count:
                 return
         surface.blit(self.boom_image[self.no],
-                     (self.pos_x - view_x, self.pos_y - view_y))
+                     (self.pos_x - view_x + 20, self.pos_y - view_y - 20))
 
     def kill_flag(self):
         if self.no >= self.count:

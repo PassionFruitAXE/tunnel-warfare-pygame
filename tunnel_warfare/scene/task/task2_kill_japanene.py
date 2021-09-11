@@ -33,8 +33,8 @@ class KillJapaneseTask(BaseTask):
     def do_self_task(self, key_down, key_list):
         collide_list = pygame.sprite.groupcollide(self.mines_group, self.japanese_group, True, True)
         for item in collide_list:
-            self.__create_boom(item.rect.x - item.rect.width,
-                               item.rect.y - item.rect.height)
+            self.__create_boom(item.rect.x - item.rect.width + 20,
+                               item.rect.y - item.rect.height + 20)
             self.score += 1
 
         if self.score > 4:
