@@ -18,6 +18,7 @@ class TunnelWarGame:
         self.clock = pygame.time.Clock()
         self.xiao_tie = XiaoTie(3070, 1460)
         self.current_scene = WelcomeScene(self.xiao_tie)
+        self.flag = False
 
     def run(self):
         while True:
@@ -28,7 +29,10 @@ class TunnelWarGame:
                 if event.type == pygame.QUIT:
                     exit()
                 elif event.type == pygame.KEYDOWN:
-                    down_flag = True
+                    if event.key == pygame.K_ESCAPE:
+                        self.flag = not self.flag
+                    else:
+                        down_flag = True
             key_list = pygame.key.get_pressed()
 
             # 1.获取场景的视窗图像
@@ -49,4 +53,5 @@ class TunnelWarGame:
             # 通过时钟对象指定循环频
             self.clock.tick(40)
             # 调用flip方法更新显示,也可以使用update方法
-            pygame.display.flip()
+            if not self.flag:
+                pygame.display.flip()

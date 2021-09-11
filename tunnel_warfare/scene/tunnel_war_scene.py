@@ -74,13 +74,13 @@ class TunnelWarScene(BaseScene):
     def run(self, down_flag, key_list):
         self.xiao_tie.run(down_flag, key_list, self.obstacle_group, self.japanese_group)
         for japanese in self.japanese_group:
-            japanese.run(down_flag, key_list, self.obstacle_group, self.xiao_tie_group)
+            japanese.run(down_flag, key_list, self.obstacle_group, self.xiao_tie_group, self.xiao_tie)
 
         self.tasks[self.task_id].do_task(down_flag, key_list)
         take_status = self.tasks[self.task_id].get_status()
 
-        if key_list[pygame.K_1]:
-            print(self.xiao_tie.pos_x, self.xiao_tie.pos_y, self.xiao_tie.rect)
+        # if key_list[pygame.K_1]:
+        #     print(self.xiao_tie.pos_x, self.xiao_tie.pos_y, self.xiao_tie.rect)
 
         # 传送检测
         if abs(self.xiao_tie.pos_x - 3070) <= 5 and abs(self.xiao_tie.pos_y - 950) <= 30:

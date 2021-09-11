@@ -13,7 +13,7 @@ class JapaneseShootSoldier(ShootSoldier):
                                                    x, y, "日军", 100)
         self.count = 10
 
-    def run(self, down_flag, key_list, obstacle_group, xiao_tie_group):
+    def run(self, down_flag, key_list, obstacle_group, xiao_tie_group, xiao_tie):
         # super(ShootSoldier, self).run(down_flag, key_list)
         if self.count == 0:
             key = random.randint(0, 3)
